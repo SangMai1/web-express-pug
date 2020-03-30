@@ -9,7 +9,8 @@ app.set('view engine', 'pug');
 app.set('views', './views')
 var users = [
     { id: 1, name: "Thinh" },
-    { id: 2, name: "Hung" }
+    { id: 2, name: "Hung" },
+    { id: 3, name: "Sang" }
 ];
 var port = 3000;
 app.get("/", function(req, res){
