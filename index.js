@@ -9,6 +9,8 @@ var app = express();
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({extended: true})); // for paesing application /x-www-form-urlencoded
 
+app.use(express.static('public'));
+
 app.set('view engine', 'pug');
 app.set('views', './views')
 
@@ -18,6 +20,7 @@ app.get("/", function(req, res){
         name: "AAA"
     };
 });
+
 
 app.use("/users", userRoutes);
 app.listen(port, function(){
