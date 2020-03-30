@@ -1,5 +1,9 @@
 var express = require("express");
 var app = express();
+var bodyParser = require("body-parser");
+
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({extended: true})); // for paesing application /x-www-form-urlencoded
 
 app.set('view engine', 'pug');
 app.set('views', './views')
@@ -31,6 +35,14 @@ app.get("/users/search", function(req, res){
     });
 });
 
+app.get("/users/create", function(req, res){
+    res.render("users/create");
+});
+
+app.post("/users/create", function(req, res){
+    users.push(req.body);
+    res.redirect("/users");
+});
 app.listen(port, function(){
     console.log("Server listening on port " + port);
 })
