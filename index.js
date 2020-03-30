@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var shortid = require("shortid");
+var cookieParser = require('cookie-parser');
 
 var userRoutes = require("./routes/user.route");
 var db = require("./db");
@@ -8,6 +9,7 @@ var db = require("./db");
 var app = express();
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({extended: true})); // for paesing application /x-www-form-urlencoded
+app.use(cookieParser());
 
 app.use(express.static('public'));
 
