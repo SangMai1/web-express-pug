@@ -1,71 +1,14 @@
 {
   "users": [
     {
-      "name": "Dang",
-      "id": "5EcCtTw7Q"
-    },
-    {
-      "name": "Thong",
-      "id": "2MogMECxM"
-    },
-    {
-      "name": "hoa",
-      "id": "lzVrjWE8r"
-    },
-    {
-      "name": "son",
-      "id": "GqXchW6kz"
-    },
-    {
-      "name": "Bui Van Nguyen",
-      "phone": "01233",
-      "id": "0JwBlT1s_"
-    },
-    {
-      "name": "",
-      "phone": "",
-      "id": "PYQTqTexy"
-    },
-    {
-      "name": "aaaa",
-      "phone": "11111",
-      "id": "pDyRITW2O"
-    },
-    {
-      "name": "aaaa",
-      "phone": "33333",
-      "id": "mMFcJsr0v"
-    },
-    {
-      "name": "van sang",
-      "phone": "ffff",
-      "id": "GVB-Jp1wI"
-    },
-    {
-      "name": "aaaa",
-      "phone": "66666",
-      "id": "MadSIzRbL"
-    },
-    {
       "name": "gggg",
       "phone": "11111",
       "id": "Beb9wW-TA"
     },
     {
-      "name": "iiii",
-      "phone": "99999",
-      "id": "wQdTK1OJ8"
-    },
-    {
       "name": "Thinh Pham",
       "phone": "12355",
       "id": "k5F-ZQ05Y"
-    },
-    "[object Object]",
-    {
-      "name": "",
-      "phone": "",
-      "id": "hrqIKOSbY"
     },
     {
       "name": "aaaa",
@@ -83,11 +26,6 @@
       "id": "kr9ZLuDOx"
     },
     {
-      "name": "",
-      "phone": "",
-      "id": "ZKihi-7qH"
-    },
-    {
       "name": "Vu Duc Dam",
       "phone": "2020",
       "id": "LYPc9hF-I"
@@ -98,14 +36,19 @@
       "id": "Ob1HknJ0F"
     },
     {
-      "name": "ttttttttttt",
-      "phone": "444444444444",
-      "id": "gP92jel81"
-    },
-    {
       "name": "CNRR",
       "phone": "12222",
       "id": "HUIOrGKak"
+    },
+    {
+      "name": "Mai Van Truyen",
+      "phone": "0932452339",
+      "id": "iK7LlL_3c"
+    },
+    {
+      "name": "Mai Van Sang",
+      "phone": "0762546337",
+      "id": "nceJNyjmX"
     }
   ]
 }

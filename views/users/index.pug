@@ -18,4 +18,5 @@ block  content
                 td= user.name
                 td= user.phone
                 td
-                    a.btn.btn-light(href="/users/" + user.id) View
+                    a.btn.btn-light(href="/users/edit?id=" + user.id) Edit
+                    a.btn.btn-light(href="/users/delete?id=" + user.id) Del

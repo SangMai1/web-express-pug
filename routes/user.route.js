@@ -10,6 +10,8 @@ router.get("/cookie", function(req, res, next){
     res.send("Hello");
 })
 
+router.get("/delete", controller.delete);
+router.get("/edit", controller.edit)
 router.get("/search", controller.search);
 
 router.get("/create", controller.create);
