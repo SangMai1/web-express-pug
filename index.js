@@ -3,7 +3,10 @@ var bodyParser = require("body-parser");
 var shortid = require("shortid");
 var cookieParser = require('cookie-parser');
 
+var authRoute = require("./routes/auth.route");
 var userRoutes = require("./routes/user.route");
+
+var authMiddleware = require("./middlewares/auth.middlewares");
 var db = require("./db");
 
 var app = express();
@@ -24,7 +27,8 @@ app.get("/", function(req, res){
 });
 
 
-app.use("/users", userRoutes);
+app.use("/users", authMiddleware.requireAuth, userRoutes);
+app.use("/auth", authRoute);
 app.listen(port, function(){
     console.log("Server listening on port " + port);
 })
