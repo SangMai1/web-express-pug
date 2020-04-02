@@ -1,3 +1,7 @@
+require("dotenv").config();
+
+console.log(process.env.NODE_ENV);
+
 var express = require("express");
 var bodyParser = require("body-parser");
 var shortid = require("shortid");
@@ -12,7 +16,7 @@ var db = require("./db");
 var app = express();
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({extended: true})); // for paesing application /x-www-form-urlencoded
-app.use(cookieParser("aaaaaaasdasda1"));
+app.use(cookieParser(process.env.NODE_ENV));
 
 
 app.use(express.static('public'));
