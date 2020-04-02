@@ -12,7 +12,8 @@ var db = require("./db");
 var app = express();
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({extended: true})); // for paesing application /x-www-form-urlencoded
-app.use(cookieParser());
+app.use(cookieParser("aaaaaaasdasda1"));
+
 
 app.use(express.static('public'));
 
