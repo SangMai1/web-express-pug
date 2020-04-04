@@ -6,6 +6,9 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var shortid = require("shortid");
 var cookieParser = require('cookie-parser');
+var csurf = require("csurf");
+
+var transferRoute = require("./routes/transfer.route");
 
 var authRoute = require("./routes/auth.route");
 var userRoutes = require("./routes/user.route");
@@ -40,7 +43,8 @@ app.use("/users", authMiddleware.requireAuth, userRoutes);
 app.use("/auth", authRoute);
 app.use("/products", productRoute);
 app.use("/cart", cartRoute);
-
+app.use("/transfer", authMiddleware.requireAuth, transferRoute);
+app.use(csurf({cookie: true}));
 app.listen(port, function(){
     console.log("Server listening on port " + port);
 })

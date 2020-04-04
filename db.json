@@ -688,6 +688,17 @@
         "e1ebe66a-7434-4a42-8660-c7bfd62fd25d": 1,
         "e241701a-797d-448a-9e74-206c2b018b91": 1
       }
+    },
+    {
+      "id": "fZfh1FaL4"
+    }
+  ],
+  "transfers": [
+    {
+      "id": "SwW6LWfE9",
+      "amount": 200000,
+      "accountId": "123456",
+      "userId": "nceJNyjmX"
     }
   ]
 }
