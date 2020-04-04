@@ -662,5 +662,32 @@
       "image": "https://loremflickr.com/320/240",
       "description": "et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros"
     }
+  ],
+  "session": [
+    {
+      "id": "AvLiUFxp7",
+      "cart": {
+        "4a74916b-2006-45b6-9001-2f68e9015e87": 2,
+        "d61a1919-6fd4-4948-9419-9e2f9f43f583": 1
+      }
+    },
+    {
+      "id": "H-RXo2GSW",
+      "cart": {
+        "4a74916b-2006-45b6-9001-2f68e9015e87": 18,
+        "d61a1919-6fd4-4948-9419-9e2f9f43f583": 1
+      }
+    },
+    {
+      "id": "nP3Yd8Ruj",
+      "cart": {
+        "4a74916b-2006-45b6-9001-2f68e9015e87": 5,
+        "d61a1919-6fd4-4948-9419-9e2f9f43f583": 2,
+        "1d7659a9-fbd1-4279-b138-5fad8c5ebd9d": 2,
+        "4d151f96-608d-4b32-bcb2-b8da4b215463": 1,
+        "e1ebe66a-7434-4a42-8660-c7bfd62fd25d": 1,
+        "e241701a-797d-448a-9e74-206c2b018b91": 1
+      }
+    }
   ]
 }

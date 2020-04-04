@@ -4,7 +4,7 @@ html
         link(rel="stylesheet", href="/styles/custom.css")
     body
         nav.navbar.navbar-expand-lg.navbar-light.bg-light
-            a.navbar-brand(href='#') Navbar
+            a.navbar-brand(href='#') Coders-x
             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarNav.collapse.navbar-collapse
@@ -13,6 +13,12 @@ html
                         a.nav-link(href='/') Home
                     li.nav-item
                         a.nav-link(href='/users') Users
+                    li.nav-item
+                        a.nav-link(href='/products') Products
+                    li.nav-item
+                        a.nav-link(href='/cart') Carts
+                        if countCart
+                            span.badge.badge-primary= countCart
             if user
                 p=user.name
 
